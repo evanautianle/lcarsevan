@@ -17,6 +17,7 @@ export default function CornerPanel({
         viewBox="0 0 120 48"
         className="block w-full h-auto pointer-events-none"
         aria-hidden
+        style={{ transform: "scaleY(-1)" }}
       >
         <path
           fill="currentColor"
