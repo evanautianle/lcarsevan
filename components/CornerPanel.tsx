@@ -12,7 +12,7 @@ export default function CornerPanel({
   fillClassName = "fill-indigo-400",
 }: CornerPanelProps) {
   return (
-    <div className={`relative w-full max-w-5xl mx-auto overflow-hidden px-4 ${className}`}>
+    <div className={`relative w-full max-w-5xl mx-auto overflow-hidden  ${className}`}>
       <svg
         viewBox="0 0 120 48"
         className="block w-full h-auto pointer-events-none"
@@ -33,12 +33,6 @@ export default function CornerPanel({
           `}
         />
       </svg>
-
-      {children && (
-        <div className="absolute inset-0 px-4">
-          {children}
-        </div>
-      )}
     </div>
   );
 }
